@@ -1,7 +1,6 @@
 (function($) {
 
     $('document').ready(function() {
-        
 
         // Loader
         gsap.to('.loader', {
