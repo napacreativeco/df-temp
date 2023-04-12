@@ -173,7 +173,12 @@ input {
     .navbar {
         width: 100%;
         max-width: 100%;
-        font-size: 18px;
+        font-size: 14px;
+    }
+    .navbar .navbar-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
 
@@ -195,6 +200,8 @@ input {
     opacity: 0;
     padding: 0px;
     border-radius: 3px;
+    width: 90%;
+    max-width: 600px;
 }
 
 .popup-wrapper {
