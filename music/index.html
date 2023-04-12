@@ -130,7 +130,7 @@
 
     <!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" /> -->
 </head>
-<body>
+<body data-page="music">
 
     <header></header>
 
@@ -151,7 +151,25 @@
         </div>
     </div>
 
+    <div class="release-container">
+        <div class="release-wrapper">
 
+            <!-- 1 -->
+            <div>
+                <div class="release">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2734a42166d927b3acce345c5c0" alt="Dominic Fike - Don't Forget About Me" />
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div>
+                <div class="release">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273cfc824b65a3b1755d98a7e23" alt="Dominic Fike - What Could Possibly Go Wrong" />
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
@@ -160,6 +178,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script src="../throne.js" type="text/javascript"></script>
+
+    <script>
+        (function($) {
+            $('document').ready(function() {
+                $('header').load('../navbar.html');           
+            });
+        })(jQuery);
+    </script>
 
 </body>
 </html>

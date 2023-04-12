@@ -8,15 +8,15 @@
         <div id="nav-center">
             <ul>
                 <li>
-                    <a href="/" title="Home" class="active">Home</a>
+                    <a id="home" href="/" title="Home" class="link">Home</a>
                 </li>
                 <li>
-                    <a href="/music" title="Music">
+                    <a id="music" href="/music" title="Music"  class="link">
                         Music
                     </a>
                 </li>
                 <li>
-                    <a href="/video" title="Video">
+                    <a id="video" href="/video" title="Video" class="link">
                         Video
                     </a>
                 </li>
@@ -30,3 +30,15 @@
 
     </div>
 </div>
+
+<script>
+    (function($) {
+        $('document').ready(function() {
+
+            var path = $('body').attr('data-page');
+            
+            $('#' + path).addClass('active')
+            
+        });
+    })(jQuery);
+</script>
