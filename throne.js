@@ -107,6 +107,8 @@
         })
         .catch(err => console.error(err));
 
+        
+
     });
 
 })(jQuery);

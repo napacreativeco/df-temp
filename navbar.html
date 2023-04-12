@@ -31,13 +31,99 @@
     </div>
 </div>
 
+<!-- Mobile Nav -->
+<div class="mobile-nav">
+    <div class="mobile-nav--wrapper">
+
+        <div>            
+            <span class="current-weather"></span>
+            <span class="current-temperature"></span>
+        </div>
+
+        <div>
+            <div class="hamburger">
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <div class="mobile-menu--wrapper">
+
+        <div class="top">
+            <div class="close-menu">
+                <span>&times;</span>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+
+        <div>
+            <ul>
+                <li>
+                    <a id="home" href="/" title="Home" class="link">Home</a>
+                </li>
+                <li>
+                    <a id="music" href="/music" title="Music"  class="link">
+                        Music
+                    </a>
+                </li>
+                <li>
+                    <a id="video" href="/video" title="Video" class="link">
+                        Video
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Subscribe" class="link">
+                        Subscribe
+                    </a>
+                </li>
+                <li>
+                    <a href="http://dominicfike.lnk.to/ditc" title="Pre-save">Pre-save</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+                <span class="current-weather"></span>
+                <span class="current-temperature"></span>
+        </div>
+
+    </div>
+</div>
+
 <script>
     (function($) {
         $('document').ready(function() {
 
             var path = $('body').attr('data-page');
             
-            $('#' + path).addClass('active')
+            $('#' + path).addClass('active');
+
+            $('.close-menu').on('click', function() {
+                gsap.to('.mobile-menu', {
+                    css: {
+                        minHeight: '0vh',
+                        maxHeight: '0vh'
+                    }
+                });
+            });
+
+            $('.hamburger').on('click', function() {
+                gsap.to('.mobile-menu', {
+                    css: {
+                        minHeight:'100vh',
+                        maxHeight: '101vh'
+                    }
+                })
+            });
             
         });
     })(jQuery);
