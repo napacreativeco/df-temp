@@ -211,7 +211,8 @@ input {
 }
 
 .iframe-wrapper {
-    padding: 40px;
+    padding: 10px 10px 60px 10px;
+    overflow: hidden;
 }
 
 .close-popup {
