@@ -169,6 +169,10 @@ input {
     content: ' \00B0 F';
 }
 
+#nav-right {
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 767px) {
     .navbar {
         width: 100%;

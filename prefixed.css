@@ -164,7 +164,9 @@ input {
 .navbar a.active {
     color: var(--green);
 }
-
+#nav-right {
+    text-transform: uppercase;
+}
 .current-temperature::after {
     content: ' \00B0 F';
 }
