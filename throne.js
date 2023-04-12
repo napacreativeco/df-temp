@@ -26,7 +26,20 @@
                     duration: 0.3,
                 });
             }
-        })
+        });
+
+        // Close Popup  
+        $('.close-popup').on('click', function() {
+            gsap.to('.popup', {
+                opacity: 0,
+                duration: 0.2,
+                onComplete: function() {
+                    gsap.to('.popup', {
+                        display: 'none'
+                    });
+                }
+            });
+        });
 
         // WMO Weather interpretation codes (WW)
         // Code	Description:
